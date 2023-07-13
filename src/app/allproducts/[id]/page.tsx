@@ -16,7 +16,7 @@ export default function Page({ params }: { params: { id: number } }) {
   //const result = prodcategory(params.slug)
   return (
     <section className="px-2 sm:px-24">
-      <div className=" flex mt-32 pb-10  gap-x-2 gap-y-8">
+      <div className=" flex mt-32 pb-10 gap-x-2 gap-y-8 justify-center">
         {result.map((prod) => {
           return (
             <div
@@ -24,7 +24,12 @@ export default function Page({ params }: { params: { id: number } }) {
               className="flex flex-col sm:flex-row justify-center gap-8 items-center"
             >
               <div>
-                <Image src={prod.image} alt={prod.name} />
+                <Image
+                  src={prod.image}
+                  alt={prod.name}
+                  width={250}
+                  height={250}
+                />
               </div>
               <div>
                 <p className=" text-2xl font-Belanosima">{prod.name}</p>

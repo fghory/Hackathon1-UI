@@ -11,7 +11,7 @@ export default function Page({ params }: { params: { slug: string } }) {
   const imageHeight = 200;
   //const result = prodcategory(params.slug)
   return (
-    <div className="mt-32 pb-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 justify-center justify-items-center gap-x-2 sm:gap-x-4 gap-y-24">
+    <div className="mt-32 pb-10 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 justify-center justify-items-center gap-x-2 sm:gap-x-4 gap-y-24">
       {result.length > 0 ? (
         result.map((prod) => (
           <Prod1

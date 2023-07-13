@@ -12,7 +12,7 @@ import herologo4 from "public/herologo4.webp";
 const Hero = () => {
   return (
     // <section className="mt-16 py-4 flex flex-col md:flex-row gap-y-16 md:gap-x-32 justify-center md:justify-evenly items-center">
-    <section className="mt-48 py-4 flex flex-col md:flex-row gap-y-16 md:gap-x-8 justify-center md:justify-between items-center">
+    <section className="mt-32 py-4 flex flex-col md:flex-row gap-y-16 md:gap-x-8 justify-center md:justify-between items-center">
       <div className="md:w-1/2 text-center md:text-start">
         <Badge
           className="bg-mygrey text-blue-600 font-bold 
