@@ -8,13 +8,14 @@ import Hamburger from "../ui/Hamburger";
 const Header = () => {
   return (
     <header>
-      <div className=" flex justify-between items-center m-4 px-2 md:px-16">
+      <div className=" z-50 bg-white flex justify-between items-center px-2 py-4 md:px-8 fixed top-0 left-0 right-0">
         <div className="md:hidden">
           <Hamburger />
         </div>
         <Link href="/">
-          <Image src={logo} alt="logo" />
+          <Image src={logo} alt="logo" className="h-6 w-32 md:h-6 md:w-32" />
         </Link>
+
         <ul className="hidden md:flex gap-x-10 font-bold">
           <li className="text-sm lg:text-lg">
             <Link href="category/Female">Female</Link>
@@ -32,11 +33,15 @@ const Header = () => {
             <Link href="/allproducts">All Products</Link>
           </li>
         </ul>
+        <input
+          className=" hidden lg:block border-2 border-gray-500 rounded-md text-sm md:py-1 pl-2"
+          placeholder="Search Product "
+        ></input>
         <div
-          className="bg-gray-300 rounded-full h-10 w-10
+          className="bg-gray-300 rounded-full h-6 w-6 md:h-10 md:w-10
         flex justify-center items-center"
         >
-          <ShoppingCart />
+          <ShoppingCart size={16} />
         </div>
       </div>
     </header>

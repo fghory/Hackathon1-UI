@@ -7,9 +7,11 @@ import Prod1 from "@/components/ui/prod1";
 
 export default function Page({ params }: { params: { slug: string } }) {
   const result = products.filter((prd) => prd.category === params.slug);
+  const imageWidth = 200;
+  const imageHeight = 200;
   //const result = prodcategory(params.slug)
   return (
-    <div className=" mt-16 pb-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 justify-center gap-x-2 sm:gap-x-4 gap-y-24">
+    <div className="mt-32 pb-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 justify-center justify-items-center gap-x-2 sm:gap-x-4 gap-y-24">
       {result.length > 0 ? (
         result.map((prod) => (
           <Prod1
@@ -20,6 +22,8 @@ export default function Page({ params }: { params: { slug: string } }) {
             category={prod.category}
             id={prod.id}
             tagline={prod.tagline}
+            customWidth={imageWidth}
+            customHeight={imageHeight}
           />
         ))
       ) : (

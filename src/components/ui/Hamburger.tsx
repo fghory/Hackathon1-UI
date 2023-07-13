@@ -15,36 +15,46 @@ const Hamburger = () => {
           setToggle(!toggle);
         }}
       >
-        {toggle ? <GiHamburgerMenu /> : <RxCross2 className="absolute text-white text-4xl"/>}
+        {toggle ? (
+          <GiHamburgerMenu />
+        ) : (
+          <RxCross2 className="absolute -top-4 -left-2 text-black text-4xl" />
+        )}
       </div>
 
       {!toggle ? (
-        <div className="md:hidden flex justify-center items-center text-center bg-black/80 w-2/3  h-screen absolute top-0 left-0 z-20">
+        <div className="md:hidden flex items-center text-center bg-white w-screen  absolute top-14 left-0 z-20 pb-2">
           <ul className="gap-x-10 gap-y-4">
-            <li className="text-4xl text-white">
+            <li className="text-3xl text-black font-bold">
               <Link href="/category/Female" target="_top">
                 Female
               </Link>
             </li>
-            <li className="text-4xl text-white">
+            <li className="text-3xl text-black font-bold">
               <Link href="/category/Male" target="_top">
                 Male
               </Link>
             </li>
-            <li className="text-4xl text-white">
+            <li className="text-3xl text-black font-bold">
               <Link href="/category/Kids" target="_top">
                 Kids
               </Link>
             </li>
-            <li className="text-4xl text-white">
+            <li className="text-3xl text-black font-bold">
               <Link href="/category/Sports" target="_top">
                 Sports
               </Link>
             </li>
-            <li className="text-4xl text-white">
+            <li className="text-3xl text-black font-bold">
               <Link href="/allproducts" target="_top">
                 All Products
               </Link>
+            </li>
+            <li>
+              <input
+                className="border-2 border-gray-500 rounded-md text-lg md:py-1 pl-2"
+                placeholder="Search Product "
+              ></input>
             </li>
           </ul>
         </div>

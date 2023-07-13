@@ -1,10 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
-  content: [
-    './src/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-	],
+  content: ["./src/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}"],
   theme: {
     container: {
       center: true,
@@ -15,10 +12,10 @@ module.exports = {
     },
     extend: {
       colors: {
-        mybeige:"#FFE4A7",
-        beigelight:"#ECE5C7",
-        mygrey:"#DDDDDD",
-        mygreen:"#DAE2B6",
+        mybeige: "#FFE4A7",
+        beigelight: "#ECE5C7",
+        mygrey: "#DDDDDD",
+        mygreen: "#DAE2B6",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -73,9 +70,9 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
-    fontFamily:{
-      Belanosima:["'Belanosima', sans-serif;"]
-    }
+    fontFamily: {
+      Belanosima: ["'Belanosima', sans-serif;"],
+    },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};

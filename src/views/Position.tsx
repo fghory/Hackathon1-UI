@@ -12,14 +12,14 @@ const Position = () => {
           Unique and Authentic Vintage Designer Jewellary
         </span>
       </div>
-      <div className=" flex flex-col md:flex-row items-center justify-center md:justify-center gap-x-8 md:-mt-4">
+      <div className=" flex flex-col md:flex-row items-center justify-center md:justify-center gap-x-2 ">
         {/* left div */}
-        <div className=" bg-white p-2 relative flex-1">
-          <h1 className="md:pr-2 text-[72px] md:text-[80px] text-gray-100 font-bold text-center md:text-start">
+        <div className=" bg-white p-2 relative basis-[40%]">
+          <h1 className="md:pr-2 text-[60px] sm:text-[72px] lg:text-[80px] text-gray-100 font-bold text-center md:text-start">
             Different from others
           </h1>
-          <div className="absolute top-10 left-0">
-            <div className="flex gap-x-10 ml-2 pt-2 md:pt-0">
+          <div className="absolute top-0 lg:top-16 left-0">
+            <div className="flex gap-x-4 ml-2 pt-2 md:pt-0">
               <div>
                 <h1 className="font-semibold mb-2 text-sm md:text-base">
                   Using Good Quality Materials
@@ -38,7 +38,7 @@ const Position = () => {
               </div>
             </div>
 
-            <div className="flex md:mt-16 mt-12 ml-2 gap-x-10">
+            <div className="flex md:mt-8 mt-12 ml-2 gap-x-10">
               <div>
                 <h1 className="font-semibold mb-2 text-sm md:text-base">
                   Modern Fashion Design
@@ -59,11 +59,11 @@ const Position = () => {
           </div>
         </div>
         {/* Center div */}
-        <div className="flex-1 md:flex-[2] ">
-          <Image src={hoodie} alt="Sweatshirt" />
+        <div className="basis-[30%] mt-6 ">
+          <Image src={hoodie} alt="Sweatshirt" className="" />
         </div>
         {/*right div*/}
-        <div className="flex-1 text-center">
+        <div className="basis-[30%] text-center">
           <p className="text-xs md:text-sm text-gray-500 mt-4 md:mt-0">
             This piece is ethically crafted in our small family-owned workshop
             in Peru with unmatched attention to detail and care. The Natural

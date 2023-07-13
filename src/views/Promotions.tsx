@@ -5,20 +5,20 @@ import boy2 from "public/boy2.webp";
 
 const Promotions = () => {
   return (
-    <section className=" mt-24">
+    <section className=" mt-32">
       <div className="flex flex-col items-center">
-        <div className="text-blue-600 text-[10px] font-bold mb-2">
-          PROMOTIONS
-        </div>
-        <div className="text-2xl font-bold mb-4">Our Promotion Events</div>
+        <div className="text-blue-600 font-bold mb-2">PROMOTIONS</div>
+        <div className="text-[28px] font-bold mb-4">Our Promotion Events</div>
       </div>
       <div className="md:flex justify-center gap-x-8">
         <div className="md:flex-1">
-          <div className="bg-mygrey w-full h-36 md:h-[45%] flex items-center justify-evenly mb-2 md:mb-8">
+          <div className="bg-mygrey w-full h-36 md:h-[45%] flex items-center justify-evenly mb-2 md:mb-8 pl-4 sm:pl-0">
             <div>
-              <span className="font-bold text-2xl">GET UP TO </span>
-              <br /> <span className="font-bold text-3xl">60% </span>
-              <br /> <span className="text-sm lg:text-lg">For the summer season</span>
+              <span className="font-bold text-xl md:text-2xl">GET UP TO </span>
+              <br />{" "}
+              <span className="font-bold text-2xl md:text-3xl">60% </span>
+              <br />
+              <span className="text-sm lg:text-lg">For the summer season</span>
             </div>
             <Image src={promogirl} alt="promogirl" width={180} />
           </div>
@@ -31,15 +31,17 @@ const Promotions = () => {
           </div>
         </div>
         <div className="flex md:flex-1 md:gap-x-8">
-          <div className="h-fit md:w-1/2 w-1/2 bg-mybeige text-xs">
+          <div className="h-fit md:w-1/2 w-1/2 bg-mybeige">
             <div className="pl-4 pt-4">
-              <p className="lg:text-base">
+              <p className="font-semibold">
                 Flex <br /> Sweatshirt
               </p>
               <p>
-                <span className="line-through lg:text-base">$100.00</span>
+                <span className="line-through text-sm lg:text-base">
+                  $100.00
+                </span>
                 <br />
-                <span className="font-bold text-sm  lg:text-base"> $75.00</span>
+                <span className="font-bold"> $75.00</span>
               </p>
             </div>
             <div className="flex justify-center ">
@@ -52,14 +54,17 @@ const Promotions = () => {
               />
             </div>
           </div>
-          <div className="h-fit md:h-fit md:w-1/2 w-1/2 bg-mygreen text-xs">
+          <div className="h-fit md:h-fit md:w-1/2 w-1/2 bg-mygreen ">
             <div className="pl-4 pt-4">
-              <p className="lg:text-base">
+              <p className="font-semibold">
                 Flex Push <br /> Button Bomber
               </p>
               <p>
-                <span className="line-through lg:text-base">$225.00</span> <br />
-                <span className="font-bold text-sm lg:text-base"> $190.00</span>
+                <span className="line-through text-sm lg:text-base">
+                  $225.00
+                </span>
+                <br />
+                <span className="font-bold"> $190.00</span>
               </p>
             </div>
             <div className="flex justify-center">
