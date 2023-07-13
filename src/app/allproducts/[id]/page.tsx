@@ -15,11 +15,14 @@ export default function Page({ params }: { params: { id: number } }) {
 
   //const result = prodcategory(params.slug)
   return (
-    <section className="px-24">
-      <div className=" flex mt-16 pb-10  gap-x-2 gap-y-8">
+    <section className="px-2 sm:px-24">
+      <div className=" flex mt-32 pb-10  gap-x-2 gap-y-8">
         {result.map((prod) => {
           return (
-            <div key={prod.id} className="flex justify-center gap-x-8 items-center">
+            <div
+              key={prod.id}
+              className="flex flex-col sm:flex-row justify-center gap-8 items-center"
+            >
               <div>
                 <Image src={prod.image} alt={prod.name} />
               </div>
@@ -33,7 +36,10 @@ export default function Page({ params }: { params: { id: number } }) {
                 <div className="flex text-[0.65rem] text-gray-500 font-semibold gap-x-4">
                   {sizes.map((item) => {
                     return (
-                      <div key={prod.id} className="w-6 h-6 bg-white rounded-full  hover:shadow-gray-400 hover:shadow-lg duration-500 flex justify-center items-center">
+                      <div
+                        key={prod.id}
+                        className="w-6 h-6 bg-white rounded-full  hover:shadow-gray-400 hover:shadow-lg duration-500 flex justify-center items-center"
+                      >
                         <span>{item}</span>
                       </div>
                     );
