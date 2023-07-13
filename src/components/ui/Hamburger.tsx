@@ -52,7 +52,7 @@ const Hamburger = () => {
             </li>
             <li>
               <input
-                className="border-2 border-gray-500 rounded-md text-lg md:py-1 pl-2"
+                className="border-2 border-gray-500 rounded-md text-lg md:py-1 pl-2 ml-4"
                 placeholder="Search Product "
               ></input>
             </li>

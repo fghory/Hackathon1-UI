@@ -38,10 +38,10 @@ const Header = () => {
           placeholder="Search Product "
         ></input>
         <div
-          className="bg-gray-300 rounded-full h-6 w-6 md:h-10 md:w-10
+          className="bg-gray-300 rounded-full h-8 w-8 md:h-10 md:w-10
         flex justify-center items-center"
         >
-          <ShoppingCart size={16} />
+          <ShoppingCart size={20} />
         </div>
       </div>
     </header>
