@@ -47,7 +47,7 @@ const Hero = () => {
             <Search className=" px-2 w-10 my-3 text-white" />
           </div>
         </div>
-        <div className="flex  flex-wrap sm:flex-nowrap mt-8 gap-x-6 lg:gap-y-4 w-full">
+        <div className=" grid grid-cols-2 sm:flex sm:flex-nowrap justify-items-center sm:max-md:justify-center mt-8 sm:gap-x-6 gap-y-4 w-full">
           <Image src={herologo1} alt="herologo1" width={80} />
           <Image src={herologo2} alt="herologo2" width={80} />
           <Image src={herologo3} alt="herologo3" width={80} />
