@@ -27,9 +27,6 @@ const Header = () => {
             <Link href="category/Kids">Kids</Link>
           </li>
           <li className="text-sm lg:text-lg">
-            <Link href="category/Sports">Sports</Link>
-          </li>
-          <li className="text-sm lg:text-lg">
             <Link href="/allproducts">All Products</Link>
           </li>
         </ul>

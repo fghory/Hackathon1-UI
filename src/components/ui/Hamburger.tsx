@@ -18,7 +18,7 @@ const Hamburger = () => {
         {toggle ? (
           <GiHamburgerMenu />
         ) : (
-          <RxCross2 className="absolute -top-4 -left-2 text-black text-4xl" />
+          <RxCross2 className="absolute -top-4 -left-2 text-black text-3xl" />
         )}
       </div>
 
@@ -38,11 +38,6 @@ const Hamburger = () => {
             <li className="text-3xl text-black font-bold">
               <Link href="/category/Kids" target="_top">
                 Kids
-              </Link>
-            </li>
-            <li className="text-3xl text-black font-bold">
-              <Link href="/category/Sports" target="_top">
-                Sports
               </Link>
             </li>
             <li className="text-3xl text-black font-bold">
